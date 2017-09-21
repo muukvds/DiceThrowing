@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Die {
     private int numberOfSides;
-    private int lastThrow;
+    private int lastThrow = 0;
 
     public Die(int numberOfSides) {
         this.numberOfSides = numberOfSides;
