@@ -4,6 +4,9 @@ public class Die {
     private int numberOfSides;
     private int lastThrow;
 
+    public Die(int numberOfSides) {
+        this.numberOfSides = numberOfSides;
+    }
 
     public void setNumberOfSides(int sides) {
         numberOfSides = sides;
