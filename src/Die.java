@@ -23,6 +23,6 @@ public class Die {
     public void throwDie()
     {
         Random rand = new Random();
-        lastThrow = rand.nextInt(50) + 1;
+        lastThrow = rand.nextInt(6) + 1;
     }
 }
