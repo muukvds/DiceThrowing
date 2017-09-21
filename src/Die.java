@@ -1,8 +1,12 @@
+import java.util.Random;
+
 public class Die {
     private int numberOfSides;
+    private int lastThrow;
 
 
     public void setNumberOfSides(int sides) {
+        numberOfSides = sides;
     }
 
     public int getNumberOfSides() {
@@ -10,9 +14,12 @@ public class Die {
     }
 
     public int getThrow() {
-        int diesTrows =0;
+        return lastThrow;
+    }
 
-
-        return diesTrows;
+    public void throwDie()
+    {
+        Random rand = new Random();
+        lastThrow = rand.nextInt(50) + 1;
     }
 }
